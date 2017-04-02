@@ -17,6 +17,7 @@ class PostAdmin(admin.ModelAdmin):
         ('Miscellaneous', {'fields': ['read_time']})
     ]
     inlines = [TagInline]
+    list_filter = ['published_date']
 
 
 admin.site.register(Post, PostAdmin)
