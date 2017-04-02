@@ -2,13 +2,15 @@ from __future__ import unicode_literals
 import datetime
 from django.db import models
 from django.utils import timezone
+from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 
 # Create your models here.
 
 class Post(models.Model):
     title = models.CharField(max_length = 200)
-    desc_sh = models.TextField(verbose_name = 'Short Description')
-    desc_lg = models.TextField(verbose_name = 'Long Description')
+    desc_sh = RichTextUploadingField(verbose_name = 'Short Description')
+    desc_lg = RichTextUploadingField(verbose_name = 'Long Description')
     create_date = models.DateTimeField(verbose_name = 'Created on:', default = timezone.now())
     published_date = models.DateTimeField(verbose_name = 'Published on:', blank = True, null =  True)
     read_time = models.IntegerField(default = 5)
