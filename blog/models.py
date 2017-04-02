@@ -19,3 +19,10 @@ class Post(models.Model):
 
     def __unicode__(self):
         return "%s" % (self.title)
+
+class Tag(models.Model):
+    parent = models.ForeignKey(Post, on_delete = models.CASCADE, verbose_name = 'Post')
+    name = models.CharField(max_length = 20)
+
+    def __unicode__(self):
+        return "%s" % (self.name)
