@@ -1,1 +1,6 @@
-{{latest_posts.text}}
+{% for post in latest_posts %}
+    <p>{{ post.title }}</p>
+    <p>{{ post.published_date }} | {{post.read_time}} minutes </p>
+    <p><li><a href="{% url 'blog:detail' post.id %}" target="_blank">Read more about {{ post.id }}</a></li>
+
+{% endfor %}
