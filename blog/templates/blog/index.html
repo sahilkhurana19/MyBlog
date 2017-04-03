@@ -1,6 +1,7 @@
 {% for post in latest_posts %}
     <p>{{ post.title }}</p>
     <p>{{ post.published_date }} | {{post.read_time}} minutes </p>
+    <p>{{ post.desc_sh|safe}}</p>
     {% for tags in post.tag_set.all %}
         {{ tags.name }} |
     {% endfor %}
