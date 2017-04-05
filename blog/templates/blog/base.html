@@ -51,9 +51,34 @@
 		</div>
 	</nav>
 	<div class="conatiner-fluid">
-		<div class="row">
-			<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
-				<img src="{% static 'blog/images/skyline.jpg' %}" class="img-responsive" id="skylinePhoto">
+		<div class="row" id="skylinePhoto">
+			<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12" id="contentBox">
+				<div class="row" id="nameRow">
+					<h1>Sahil Khurana</h1>
+				</div>
+				<div class="row" id="navRow">
+					<ul class="nav navbar-nav">
+						<li>
+							Home
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" ariahaspopup="true" aria-expanded="false" id="navCatDrop">Categories <span class="caret"></span></a>
+							<ul class="dropdown-menu" id="navCatDropped">
+								{% for tag in tags %}
+									<li>
+        								{{ tag.name }}
+									</li>
+    							{% endfor %}
+							</ul>
+						</li>
+						<li>
+							About
+						</li>
+						<li>
+							Contact
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

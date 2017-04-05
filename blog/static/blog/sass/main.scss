@@ -23,5 +23,46 @@ body {
 }
 
 #skylinePhoto {
-	background-size: cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/skyline.jpg");
+	background-size: cover !important;
+	background-position: center !important; 
+
+	#contentBox {
+		color: white;
+		text-align: center;
+		#nameRow {
+			padding-top: 2em;
+			
+		}
+		#navRow {
+			display: inline-block;
+			font-size: 1em;
+			ul {
+				text-align: center;
+				margin: 0 auto;
+				li {
+					text-align: center;
+					padding: 1em;
+				}
+			}
+			#navCatDrop {
+				&:visited {
+					color: white;
+				}
+				&:hover, &:active, &:focus {
+					color: white;
+					background-color: transparent;
+				}
+				padding: 0;
+				color: white;
+			}
+			#navCatDropped {
+				color: black;
+				li {
+					text-align: left;
+					padding: 0.5em; 
+				}
+			}
+		}
+	}
 }

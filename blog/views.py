@@ -4,7 +4,8 @@ from .models import Post, Tag
 
 def index(request):
     latest_posts = Post.objects.order_by('-published_date')[:5]
-    context = {'latest_posts':latest_posts}
+    tags = Tag.objects.all()
+    context = {'latest_posts':latest_posts, 'tags':tags}
     return render(request, 'blog/index.html', context)
 
 def detail(request, post_id):

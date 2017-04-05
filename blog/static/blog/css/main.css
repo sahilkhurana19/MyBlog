@@ -17,6 +17,35 @@ body {
       color: black; }
 
 #skylinePhoto {
-  background-size: cover; }
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/skyline.jpg");
+  background-size: cover !important;
+  background-position: center !important; }
+  #skylinePhoto #contentBox {
+    color: white;
+    text-align: center; }
+    #skylinePhoto #contentBox #nameRow {
+      padding-top: 2em; }
+    #skylinePhoto #contentBox #navRow {
+      display: inline-block;
+      font-size: 1em; }
+      #skylinePhoto #contentBox #navRow ul {
+        text-align: center;
+        margin: 0 auto; }
+        #skylinePhoto #contentBox #navRow ul li {
+          text-align: center;
+          padding: 1em; }
+      #skylinePhoto #contentBox #navRow #navCatDrop {
+        padding: 0;
+        color: white; }
+        #skylinePhoto #contentBox #navRow #navCatDrop:visited {
+          color: white; }
+        #skylinePhoto #contentBox #navRow #navCatDrop:hover, #skylinePhoto #contentBox #navRow #navCatDrop:active, #skylinePhoto #contentBox #navRow #navCatDrop:focus {
+          color: white;
+          background-color: transparent; }
+      #skylinePhoto #contentBox #navRow #navCatDropped {
+        color: black; }
+        #skylinePhoto #contentBox #navRow #navCatDropped li {
+          text-align: left;
+          padding: 0.5em; }
 
 /*# sourceMappingURL=main.css.map */
