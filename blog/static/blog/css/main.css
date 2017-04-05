@@ -1,0 +1,22 @@
+body {
+  background: white;
+  overflow-x: hidden !important;
+  overflow-y: scroll; }
+
+.navbar-default {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: black; }
+  .navbar-default .navbar-header {
+    color: black; }
+  .navbar-default .navbar-right {
+    padding-right: 2em; }
+    .navbar-default .navbar-right i {
+      font-size: 1.5em;
+      color: black; }
+
+#skylinePhoto {
+  background-size: cover; }
+
+/*# sourceMappingURL=main.css.map */

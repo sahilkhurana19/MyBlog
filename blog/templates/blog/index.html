@@ -1,4 +1,7 @@
-<!-- Code for displaying blog content
+<!--{% extends 'blog/base.html' %}
+{% block index %}
+almdalkdn
+<! Code for displaying blog content
 {% for post in latest_posts %}
     <p>{{ post.title }}</p>
     <p>{{ post.published_date }} | {{post.read_time}} minutes </p>
@@ -8,4 +11,5 @@
     {% endfor %}
     <p><li><a href="{% url 'blog:detail' post.id %}" target="_blank">Read more about {{ post.id }}</a></li>
 {% endfor %}
--->
+
+{% endblock %}-->
