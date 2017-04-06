@@ -3,6 +3,7 @@ body {
 	background: white;	
 	overflow-x: hidden !important;
 	overflow-y: scroll;
+	font-family: Open Sans, serif;
 }
 
 .navbar-default {
@@ -31,18 +32,30 @@ body {
 		color: white;
 		text-align: center;
 		#nameRow {
-			padding-top: 2em;
+			padding-top: 4em;
+			h1 {
+				font-size: 5em;
+			}
 			
 		}
 		#navRow {
 			display: inline-block;
-			font-size: 1em;
+			font-size: 1.5em;
 			ul {
 				text-align: center;
 				margin: 0 auto;
 				li {
 					text-align: center;
 					padding: 1em;
+					a {
+						padding: 0px;
+						color: white;
+						&:visited, &:hover, &:active, &:focus{
+						color: white;
+						background: transparent;
+						}
+				
+					}
 				}
 			}
 			#navCatDrop {
@@ -63,6 +76,16 @@ body {
 					padding: 0.5em; 
 				}
 			}
+		}
+		#lineAbove {
+			margin-top: 5em;
+		}
+		#lineBelow {
+			margin-bottom: 4em;
+		}
+		#mainQuote {
+			font-style: italic;
+			margin: 20px 0;
 		}
 	}
 }

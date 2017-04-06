@@ -1,7 +1,8 @@
 body {
   background: white;
   overflow-x: hidden !important;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  font-family: Open Sans, serif; }
 
 .navbar-default {
   background: none;
@@ -24,16 +25,24 @@ body {
     color: white;
     text-align: center; }
     #skylinePhoto #contentBox #nameRow {
-      padding-top: 2em; }
+      padding-top: 4em; }
+      #skylinePhoto #contentBox #nameRow h1 {
+        font-size: 5em; }
     #skylinePhoto #contentBox #navRow {
       display: inline-block;
-      font-size: 1em; }
+      font-size: 1.5em; }
       #skylinePhoto #contentBox #navRow ul {
         text-align: center;
         margin: 0 auto; }
         #skylinePhoto #contentBox #navRow ul li {
           text-align: center;
           padding: 1em; }
+          #skylinePhoto #contentBox #navRow ul li a {
+            padding: 0px;
+            color: white; }
+            #skylinePhoto #contentBox #navRow ul li a:visited, #skylinePhoto #contentBox #navRow ul li a:hover, #skylinePhoto #contentBox #navRow ul li a:active, #skylinePhoto #contentBox #navRow ul li a:focus {
+              color: white;
+              background: transparent; }
       #skylinePhoto #contentBox #navRow #navCatDrop {
         padding: 0;
         color: white; }
@@ -47,5 +56,12 @@ body {
         #skylinePhoto #contentBox #navRow #navCatDropped li {
           text-align: left;
           padding: 0.5em; }
+    #skylinePhoto #contentBox #lineAbove {
+      margin-top: 5em; }
+    #skylinePhoto #contentBox #lineBelow {
+      margin-bottom: 4em; }
+    #skylinePhoto #contentBox #mainQuote {
+      font-style: italic;
+      margin: 20px 0; }
 
 /*# sourceMappingURL=main.css.map */

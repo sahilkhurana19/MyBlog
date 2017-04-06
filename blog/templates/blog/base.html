@@ -3,6 +3,9 @@
 <html>
 <head>
 	<title>Sahil's Blog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -59,9 +62,9 @@
 				<div class="row" id="navRow">
 					<ul class="nav navbar-nav">
 						<li>
-							Home
+							<a href="https://sahilkhurana19.github.io" target="_blank">Home</a>
 						</li>
-						<li class="dropdown">
+						<!--li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" ariahaspopup="true" aria-expanded="false" id="navCatDrop">Categories <span class="caret"></span></a>
 							<ul class="dropdown-menu" id="navCatDropped">
 								{% for tag in tags %}
@@ -70,14 +73,30 @@
 									</li>
     							{% endfor %}
 							</ul>
+						</li-->
+						<li>
+							<a href="#">About</a>
 						</li>
 						<li>
-							About
-						</li>
-						<li>
-							Contact
+							<a href="#">Contact</a>
 						</li>
 					</ul>
+				</div>
+				<div class="row">
+					<div class="col-md-offset-1 col-lg-offset-1 col-sm-offset-1 col-xs-offset-1 col-md-10 col-lg-10 col-sm-10 col-xs-10">
+					<hr id="lineAbove">
+					</div>
+				</div>
+				<div class="row">
+					<!-- Create a random generator function to change quotes on page refresh -->
+					<div class="col-md-offset-1 col-lg-offset-1 col-sm-offset-1 col-xs-offset-1 col-md-10 col-lg-10 col-sm-10 col-xs-10">
+					<h1 id="mainQuote">Experience teaches slowly, and at the cost of mistakes</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-offset-1 col-lg-offset-1 col-sm-offset-1 col-xs-offset-1 col-md-10 col-lg-10 col-sm-10 col-xs-10">
+					<hr id="lineBelow">
+					</div>
 				</div>
 			</div>
 		</div>
