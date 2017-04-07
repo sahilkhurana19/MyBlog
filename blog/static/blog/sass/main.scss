@@ -1,4 +1,5 @@
 $blog-orange: #ff4800;
+$blogShadow: #666;
 body {
 	background: white;	
 	overflow-x: hidden !important;
@@ -88,4 +89,9 @@ body {
 			margin: 20px 0;
 		}
 	}
+}
+
+.shCard {
+	margin-top: 3em;  
+	box-shadow: 0px 5px 1em $blogShadow;
 }
