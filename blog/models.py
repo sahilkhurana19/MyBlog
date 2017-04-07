@@ -11,6 +11,7 @@ class Post(models.Model):
     title = models.CharField(max_length = 200)
     desc_sh = RichTextUploadingField(verbose_name = 'Short Description')
     desc_lg = RichTextUploadingField(verbose_name = 'Long Description')
+    image = models.ImageField(upload_to='%Y/%m/%d/', blank=True, null=True)
     create_date = models.DateTimeField(verbose_name = 'Created on:', default = timezone.now())
     published_date = models.DateTimeField(verbose_name = 'Published on:', blank = True, null =  True)
     read_time = models.IntegerField(default = 5)

@@ -12,7 +12,7 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'published_date', 'was_published_recently')
     fieldsets = [
         (None,  {'fields': ['title']}),
-        ('Post Content', {'fields':['desc_sh', 'desc_lg']}),
+        ('Post Content', {'fields':['desc_sh', 'desc_lg', 'image']}),
         ('Date Information', {'fields':['create_date', 'published_date']}),
         ('Miscellaneous', {'fields': ['read_time']})
     ]

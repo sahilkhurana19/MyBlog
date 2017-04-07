@@ -1,7 +1,28 @@
 {% extends 'blog/base.html' %}
+{% load static %}
 {% block index %}
-    <p>{{ post.title|title }}</p>
-    <p>{{ post.published_date }} | {{post.read_time}} minutes </p>
+    <div class="row">
+        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-12">
+            <div>
+                {{ post.published_date|date:"d"}}
+            </div>
+            <div>           
+                {{ post.published_date|date:"M" }}
+            </div>
+            <div>           
+                {{ post.published_date|date:"Y" }}
+            </div>
+        </div>
+        <div class="col-md-10 col-lg-10 col-sm-9 col-xs-12">
+            <div>
+                {{ post.title|title }}
+            </div>
+            <div>
+                Written by <span>Sahil Khurana</span>
+            </div>
+        </div>
+    </div>
+    <img src="uploads/{{ post.image }}">
     <p>{{ post.desc_sh|safe|truncatewords:30}}</p>
     {% for tags in post.tag_set.all %}
         {{ tags.name }}
