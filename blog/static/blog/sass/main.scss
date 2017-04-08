@@ -3,9 +3,15 @@ $blogShadow: #666;
 body {
 	background: white;	
 	overflow-x: hidden !important;
-	overflow-y: scroll;
+	overflow-y: scroll !important;
 	font-family: Open Sans, serif;
+	
+	
 }
+.marginEquator, .row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 
 .navbar-default {
 	background: none;
@@ -32,6 +38,7 @@ body {
 	#contentBox {
 		color: white;
 		text-align: center;
+		padding: 0px;	
 		#nameRow {
 			padding-top: 4em;
 			h1 {
@@ -94,4 +101,5 @@ body {
 .shCard {
 	margin-top: 3em;  
 	box-shadow: 0px 5px 1em $blogShadow;
+	
 }

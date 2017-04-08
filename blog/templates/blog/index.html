@@ -22,8 +22,8 @@
             </div>
         </div>
     </div>
-    <img src="uploads/{{ post.image }}">
     <p>{{ post.desc_sh|safe|truncatewords:30}}</p>
+    <img src="upload/{{ post.image }}">
     {% for tags in post.tag_set.all %}
         {{ tags.name }}
     {% endfor %}

@@ -1,8 +1,12 @@
 body {
   background: white;
   overflow-x: hidden !important;
-  overflow-y: scroll;
+  overflow-y: scroll !important;
   font-family: Open Sans, serif; }
+
+.marginEquator, .row {
+  margin-left: 0px;
+  margin-right: 0px; }
 
 .navbar-default {
   background: none;
@@ -23,7 +27,8 @@ body {
   background-position: center !important; }
   #skylinePhoto #contentBox {
     color: white;
-    text-align: center; }
+    text-align: center;
+    padding: 0px; }
     #skylinePhoto #contentBox #nameRow {
       padding-top: 4em; }
       #skylinePhoto #contentBox #nameRow h1 {
