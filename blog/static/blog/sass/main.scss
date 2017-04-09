@@ -101,5 +101,10 @@ body {
 .shCard {
 	margin-top: 3em;  
 	box-shadow: 0px 5px 1em $blogShadow;
-	
+	#shImg {
+		object-fit: cover;
+		width: 100%;
+		height: 250px;
+		filter: grayscale(1)
+	}
 }
