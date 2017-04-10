@@ -72,10 +72,66 @@ body {
 .shCard {
   margin-top: 3em;
   box-shadow: 0px 5px 1em #666; }
-  .shCard #shImg {
+  .shCard .shTA {
+    margin-left: 0em; }
+    .shCard .shTA .shTitle {
+      color: #ff811d; }
+      .shCard .shTA .shTitle h3 {
+        font-weight: bolder;
+        margin-top: 12px; }
+    .shCard .shTA .shAuthor h5 {
+      font-weight: bold; }
+  .shCard .shImg {
+    padding: 2px 0px;
     object-fit: cover;
     width: 100%;
-    height: 250px;
+    height: 220px;
     filter: grayscale(1); }
+  .shCard .dateCol {
+    margin-top: 6px;
+    text-align: center; }
+    .shCard .dateCol h2, .shCard .dateCol h4 {
+      margin: 3px 0px;
+      font-weight: bold;
+      text-align: center; }
+    .shCard .dateCol .dayDate {
+      color: #ff811d; }
+  .shCard .shText {
+    font-weight: bold; }
+  .shCard .btn-warning {
+    color: white;
+    background-color: #ff811d;
+    background-image: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px; }
+  .shCard .shTags {
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #ff811d; }
+
+@media only screen and (max-width: 768px) {
+  .dateInliner {
+    display: inline; }
+    .dateInliner h2, .dateInliner h4 {
+      display: inline;
+      padding-left: 5px;
+      font-size: 1.6em !important; } }
+@media only screen and (max-width: 800px) {
+  .shCard .shImg {
+    height: 150px; }
+  .shCard .shTA .shTitle h3 {
+    font-size: 1.3em; }
+  .shCard .shTA .shAuthor h5 {
+    font-size: 0.9em; }
+  .shCard .dateCol h2 {
+    font-size: 1.8em; }
+  .shCard .dateCol h4 {
+    font-size: 1.2em; } }
+@media only screen and (max-width: 1200px) {
+  .shCard .shImg {
+    height: 170px; } }
 
 /*# sourceMappingURL=main.css.map */

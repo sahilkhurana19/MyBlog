@@ -1,5 +1,6 @@
-$blog-orange: #ff4800;
+$blog-orange: #ff811d;
 $blogShadow: #666;
+
 body {
 	background: white;	
 	overflow-x: hidden !important;
@@ -11,7 +12,7 @@ body {
 .marginEquator, .row {
 		margin-left: 0px;
 		margin-right: 0px;
-	}
+}
 
 .navbar-default {
 	background: none;
@@ -101,10 +102,103 @@ body {
 .shCard {
 	margin-top: 3em;  
 	box-shadow: 0px 5px 1em $blogShadow;
-	#shImg {
+	.shTA { 
+		margin-left: 0em;
+		.shTitle {
+			color: $blog-orange;
+			h3 {
+				font-weight: bolder;
+				margin-top: 12px; 
+			}
+		}
+		.shAuthor {
+			h5 {
+				font-weight: bold;
+			}
+		}
+	}
+	.shImg {
+		padding: 2px 0px;
 		object-fit: cover;
 		width: 100%;
-		height: 250px;
-		filter: grayscale(1)
+		height: 220px;
+		filter: grayscale(1);
+	}
+	.dateCol {
+		margin-top: 6px;	
+		text-align: center;
+		h2, h4 {
+			margin: 3px 0px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.dayDate {
+			color: $blog-orange;
+		}
+	}
+	.shText {
+		font-weight: bold
+	}
+	.btn-warning {
+		color: white;
+		background-color: $blog-orange;
+		background-image: none;
+		font-weight: bold;
+		border: none;
+		border-radius: 0px;
+	}
+	.shTags {
+		font-size: 1em;
+		font-weight: 400;
+		padding-top: 1em;
+		padding-bottom: 1em;  
+		color: $blog-orange;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.dateInliner {
+		display: inline;
+		h2, h4 {
+			display: inline;
+			padding-left: 5px;
+			font-size: 1.6em !important;  
+		}
+	}
+} 
+
+@media only screen and (max-width: 800px) {
+	.shCard {
+		.shImg {
+			height: 150px;
+		}
+		.shTA {
+			.shTitle {
+				h3 {
+					font-size: 1.3em;
+				}
+			}
+			.shAuthor {
+				h5 {
+					font-size: 0.9em;
+				}
+			}
+		}
+		.dateCol {
+			h2 {
+				font-size: 1.8em;
+			}
+			h4 {
+				font-size: 1.2em;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.shCard {
+		.shImg {
+			height: 170px;
+		}
 	}
 }
