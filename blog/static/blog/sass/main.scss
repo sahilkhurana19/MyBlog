@@ -137,7 +137,10 @@ body {
 		}
 	}
 	.shText {
-		font-weight: bold
+		font-weight: bold;
+		strong {
+			color: $blog-orange;
+		}
 	}
 	.btn-warning {
 		color: white;
@@ -153,6 +156,15 @@ body {
 		padding-top: 1em;
 		padding-bottom: 1em;  
 		color: $blog-orange;
+	}
+	.rightCard {
+		color: $blog-orange;
+		padding: 5px 1em;
+		font-weight: bold;
+	}
+	.recentPosts {
+		border-top: 1px solid #eee;
+		padding: 1em;
 	}
 }
 

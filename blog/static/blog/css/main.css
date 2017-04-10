@@ -98,6 +98,8 @@ body {
       color: #ff811d; }
   .shCard .shText {
     font-weight: bold; }
+    .shCard .shText strong {
+      color: #ff811d; }
   .shCard .btn-warning {
     color: white;
     background-color: #ff811d;
@@ -111,6 +113,13 @@ body {
     padding-top: 1em;
     padding-bottom: 1em;
     color: #ff811d; }
+  .shCard .rightCard {
+    color: #ff811d;
+    padding: 5px 1em;
+    font-weight: bold; }
+  .shCard .recentPosts {
+    border-top: 1px solid #eee;
+    padding: 1em; }
 
 @media only screen and (max-width: 768px) {
   .dateInliner {
