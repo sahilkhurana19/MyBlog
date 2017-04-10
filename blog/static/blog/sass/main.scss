@@ -139,6 +139,11 @@ body {
 	.shText {
 		font-weight: bold
 	}
+	.descGroup {
+		strong {
+			color: $blog-orange;
+		}
+	}
 	.btn-warning {
 		color: white;
 		background-color: $blog-orange;
@@ -166,6 +171,12 @@ body {
 		}
 	}
 } 
+
+@media only screen and (min-width: 768px) {
+	#rightBar {
+		left: 58%;
+	}
+}
 
 @media only screen and (max-width: 800px) {
 	.shCard {

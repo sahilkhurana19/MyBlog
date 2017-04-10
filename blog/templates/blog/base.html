@@ -17,6 +17,7 @@
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="{% static 'blog/css/main.css' %}">
+	<script src="{% static 'blog/js/main.js' %}"></script>
 	<script src="https://use.fontawesome.com/d2fdde20f2.js"></script>
 	
 </head>
@@ -109,10 +110,16 @@
 					{% endblock %}
 				
 			</div>
-			<div class="col-md-offset-1 col-lg-offset-1 col-sm-offset-1 col-md-3 col-lg-3 col-sm-4 col-xs-12 shCard">
+			<div class="col-md-offset-1 col-lg-offset-1 col-sm-offset-1 col-md-3 col-lg-3 col-sm-4 col-xs-12" id="rightBar">
+				<div class="row shCard">
 				<h1>
 					RECENT POSTS
 				</h1>
+				</div>
+				<div class="row shCard">
+					<h1>CATEGORIES</h1>
+				</div>
+
 			</div>
 		</div>
 	</div>
