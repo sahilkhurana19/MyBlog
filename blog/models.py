@@ -4,8 +4,13 @@ from django.db import models
 from django.utils import timezone
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
+from taggit.managers import TaggableManager
+from taggit.models import TaggedItemBase
 
 # Create your models here.
+
+
+
 
 class Post(models.Model):
     title = models.CharField(max_length = 200)
@@ -15,6 +20,7 @@ class Post(models.Model):
     create_date = models.DateTimeField(verbose_name = 'Created on:', default = timezone.now())
     published_date = models.DateTimeField(verbose_name = 'Published on:', blank = True, null =  True)
     read_time = models.IntegerField(default = 5)
+    tags = models.ManyToManyField('Tag')
 
     def was_published_recently(self):
         now  = timezone.now()
@@ -27,8 +33,8 @@ class Post(models.Model):
         return "%s" % (self.title)
 
 class Tag(models.Model):
-    parent = models.ForeignKey(Post, on_delete = models.CASCADE, verbose_name = 'Post')
-    name = models.CharField(max_length = 20)
+    #parent = models.ForeignKey(Post, on_delete = models.CASCADE, verbose_name = 'Post')
+    name = models.CharField(max_length = 100, blank=True, null=True)
 
     def __unicode__(self):
         return "%s" % (self.name)

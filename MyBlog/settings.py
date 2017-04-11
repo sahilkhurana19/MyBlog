@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'taggit',
     'ckeditor',
     'ckeditor_uploader',
     'blog.apps.BlogConfig',
@@ -119,8 +120,10 @@ USE_L10N = True
 USE_TZ = True
 
 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
+
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static-root')
@@ -132,7 +135,11 @@ CKEDITOR_BROWSE_SHOW_DIRS = True
 MEDIA_URL = '/uploads/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 
+TAGGIT_CASE_INSENSITIVE = True
+
 CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
+
+
 
 CKEDITOR_CONFIGS = {
     'default': {

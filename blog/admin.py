@@ -5,8 +5,8 @@ from django.contrib import admin
 from .models import Post, Tag
 
 class TagInline(admin.TabularInline):
-    model = Tag
-    extra = 3
+    model = Post.tags.through
+#    extra = 3
 
 class PostAdmin(admin.ModelAdmin):
     list_display = ('title', 'published_date', 'was_published_recently')
