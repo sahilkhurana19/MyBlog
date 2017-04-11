@@ -4,8 +4,8 @@ from django.db import models
 from django.utils import timezone
 from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
-from taggit.managers import TaggableManager
-from taggit.models import TaggedItemBase
+#from taggit.managers import TaggableManager
+#from taggit.models import TaggedItemBase
 
 # Create your models here.
 

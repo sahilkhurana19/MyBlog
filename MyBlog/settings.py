@@ -33,7 +33,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
-    'taggit',
+    #'taggit',
     'ckeditor',
     'ckeditor_uploader',
     'blog.apps.BlogConfig',
@@ -135,7 +135,7 @@ CKEDITOR_BROWSE_SHOW_DIRS = True
 MEDIA_URL = '/uploads/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 
-TAGGIT_CASE_INSENSITIVE = True
+#TAGGIT_CASE_INSENSITIVE = True
 
 CKEDITOR_JQUERY_URL = 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'
 
