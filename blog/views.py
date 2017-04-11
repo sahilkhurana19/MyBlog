@@ -10,5 +10,6 @@ def index(request):
 
 def detail(request, post_id):
     post = get_object_or_404(Post, pk=post_id)
-    context = {'post': post}
+    tags = Tag.objects.all()
+    context = {'post': post, 'tags':tags}
     return render(request, 'blog/detail.html', context)

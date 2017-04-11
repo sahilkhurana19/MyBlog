@@ -43,10 +43,10 @@
         </div>
     </div>
     {% endif %}
-    {% if post.tag_set %}
+    {% if post.tags %}
     <div class="row">
         <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 shTags">
-    {% for tags in post.tag_set.all %}
+    {% for tags in post.tags.all %}
         {% if forloop.first %}
         {% else %}
             ,
