@@ -13,3 +13,9 @@ def detail(request, post_id):
     tags = Tag.objects.all()
     context = {'post': post, 'tags':tags}
     return render(request, 'blog/detail.html', context)
+
+def category(request, tag_id):
+    post = Post.objects.filter(tags__pk = tag_id )
+    tags = get_object_or_404(Tag, pk=tag_id)
+    context = {'post':post, 'tags':tags}
+    return render(request, 'blog/category.html', context)

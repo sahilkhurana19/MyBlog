@@ -137,7 +137,6 @@ body {
 		}
 	}
 	.shText {
-		font-weight: bold;
 		strong {
 			color: $blog-orange;
 		}
@@ -152,7 +151,7 @@ body {
 	}
 	.shTags {
 		font-size: 1em;
-		font-weight: 400;
+		font-weight: bold;
 		padding-top: 1em;
 		padding-bottom: 1em;  
 		color: $blog-orange;
@@ -162,7 +161,7 @@ body {
 		padding: 5px 1em;
 		font-weight: bold;
 	}
-	.recentPosts {
+	.recentPosts, .categories {
 		border-top: 1px solid #eee;
 		padding: 1em;
 	}

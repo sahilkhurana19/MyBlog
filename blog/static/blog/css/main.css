@@ -96,10 +96,8 @@ body {
       text-align: center; }
     .shCard .dateCol .dayDate {
       color: #ff811d; }
-  .shCard .shText {
-    font-weight: bold; }
-    .shCard .shText strong {
-      color: #ff811d; }
+  .shCard .shText strong {
+    color: #ff811d; }
   .shCard .btn-warning {
     color: white;
     background-color: #ff811d;
@@ -109,7 +107,7 @@ body {
     border-radius: 0px; }
   .shCard .shTags {
     font-size: 1em;
-    font-weight: 400;
+    font-weight: bold;
     padding-top: 1em;
     padding-bottom: 1em;
     color: #ff811d; }
@@ -117,7 +115,7 @@ body {
     color: #ff811d;
     padding: 5px 1em;
     font-weight: bold; }
-  .shCard .recentPosts {
+  .shCard .recentPosts, .shCard .categories {
     border-top: 1px solid #eee;
     padding: 1em; }
 

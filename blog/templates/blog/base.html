@@ -127,7 +127,10 @@
 						CATEGORIES
 					</h2>
 					{% for tag in tags %}
-						{{ tag.name }}
+						<div class="categories">
+							{{ tag.name|capfirst }}
+							<br>
+						</div>
 					{% endfor %}
 				</div>
 			</div>
