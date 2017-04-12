@@ -153,8 +153,15 @@ body {
 		font-size: 1em;
 		font-weight: bold;
 		padding-top: 1em;
-		padding-bottom: 1em;  
+		padding-bottom: 1em;
 		color: $blog-orange;
+		a {  
+			color: $blog-orange;
+			text-decoration: none;
+			&:hover, &:active, &:visited {
+				color: $blog-orange;
+			}
+		}
 	}
 	.rightCard {
 		color: $blog-orange;

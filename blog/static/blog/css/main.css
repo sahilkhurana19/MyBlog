@@ -111,6 +111,11 @@ body {
     padding-top: 1em;
     padding-bottom: 1em;
     color: #ff811d; }
+    .shCard .shTags a {
+      color: #ff811d;
+      text-decoration: none; }
+      .shCard .shTags a:hover, .shCard .shTags a:active, .shCard .shTags a:visited {
+        color: #ff811d; }
   .shCard .rightCard {
     color: #ff811d;
     padding: 5px 1em;

@@ -128,7 +128,7 @@
 					</h2>
 					{% for tag in tags %}
 						<div class="categories">
-							{{ tag.name|capfirst }}
+							<a href="{% url 'blog:category' tag.id %}">{{ tag.name|capfirst }}</a>
 							<br>
 						</div>
 					{% endfor %}
