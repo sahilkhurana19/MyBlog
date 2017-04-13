@@ -36,10 +36,12 @@ body {
     text-align: center;
     padding: 0px; }
     #skylinePhoto #contentBox #nameRow {
+      font-family: "Yeseva One", cursive;
       padding-top: 4em; }
       #skylinePhoto #contentBox #nameRow h1 {
         font-size: 5em; }
     #skylinePhoto #contentBox #navRow {
+      font-family: "Yeseva One", cursive;
       display: inline-block;
       font-size: 1.5em; }
       #skylinePhoto #contentBox #navRow ul {
@@ -72,6 +74,7 @@ body {
     #skylinePhoto #contentBox #lineBelow {
       margin-bottom: 4em; }
     #skylinePhoto #contentBox #mainQuote {
+      font-family: "Lobster Two", cursive;
       font-style: italic;
       margin: 20px 0; }
 
@@ -79,6 +82,7 @@ body {
   margin-top: 3em;
   box-shadow: 0px 5px 1em #666; }
   .shCard .shTA {
+    font-family: "Playfair Display SC", serif;
     margin-left: 0em; }
     .shCard .shTA .shTitle {
       color: #ff811d; }
@@ -102,16 +106,22 @@ body {
       text-align: center; }
     .shCard .dateCol .dayDate {
       color: #ff811d; }
-  .shCard .shText strong {
-    color: #ff811d; }
+  .shCard .shText {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.5em; }
+    .shCard .shText strong {
+      color: #ff811d; }
   .shCard .btn-warning {
     color: white;
     background-color: #ff811d;
     background-image: none;
     font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
     border: none;
     border-radius: 0px; }
   .shCard .shTags {
+    font-family: "Josefin Sans", sans-serif;
     font-size: 1em;
     font-weight: bold;
     padding-top: 1em;
@@ -126,10 +136,13 @@ body {
         color: #ff811d;
         text-decoration: underline; }
   .shCard .rightCard {
+    font-family: "Playfair Display SC", serif;
     color: #ff811d;
     padding: 5px 1em;
     font-weight: bold; }
   .shCard .recentPosts, .shCard .categories {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
     font-size: 1.2em;
     border-top: 1px solid #eee;
     padding: 1em; }
@@ -143,12 +156,14 @@ body {
         transition: 0.3s;
         text-decoration: underline; }
   .shCard #contactContact h1 {
+    font-family: "Playfair Display SC", serif;
     color: #ff811d;
     font-weight: bolder;
     font-size: 3em; }
   .shCard #contactEmail, .shCard #contactPhone {
     color: #ff811d; }
     .shCard #contactEmail h3, .shCard #contactPhone h3 {
+      font-family: "Josefin Sans", sans-serif;
       font-weight: bolder; }
       .shCard #contactEmail h3 a, .shCard #contactEmail h3 span, .shCard #contactPhone h3 a, .shCard #contactPhone h3 span {
         font-weight: normal;
@@ -177,21 +192,24 @@ body {
   padding-right: 0em; }
 
 .footer {
+  font-family: "Josefin Sans", sans-serif;
   margin-top: 2em; }
-  .footer h3 {
+  .footer h5 {
     text-align: center; }
-    .footer h3 i {
+    .footer h5 i {
       color: #ff811d; }
-    .footer h3 a {
+    .footer h5 a {
       color: #ff811d; }
 
 @media only screen and (max-width: 335px) {
   #skylinePhoto #nameRow {
-    font-size: 0.7em !important; }
+    font-size: 0.8em !important; }
+  #skylinePhoto #navRow {
+    font-size: 1.4em !important; }
 
   .navbar-default ul li i {
-    font-size: 1.5em !important; } }
-@media only screen and (max-width: 768px) {
+    font-size: 1.4em !important; } }
+@media only screen and (max-width: 767px) {
   #skylinePhoto #nameRow {
     font-size: 0.8em; }
   #skylinePhoto #navRow li {
@@ -211,7 +229,7 @@ body {
 
   .navbar-default .navbar-right {
     text-align: center;
-    padding: 0.7em 0em; }
+    padding: 0.5em 0em; }
     .navbar-default .navbar-right li {
       display: inline; }
       .navbar-default .navbar-right li a {
@@ -233,7 +251,13 @@ body {
   .shCard .dateCol h2 {
     font-size: 1.8em; }
   .shCard .dateCol h4 {
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+
+  .shortPrev {
+    padding-left: 0em; }
+
+  .shortNext {
+    padding-right: 0em; } }
 @media only screen and (max-width: 1200px) and (min-width: 990px) {
   .shCard .shTA {
     padding-left: 30px; }

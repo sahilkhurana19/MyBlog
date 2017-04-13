@@ -1,5 +1,9 @@
 $blog-orange: #ff811d;
 $blogShadow: #666;
+$font-text: 'Josefin Sans', sans-serif;
+$font-heading: 'Playfair Display SC', serif;
+$font-quote: 'Lobster Two', cursive;
+$font-name:	'Yeseva One', cursive;
 
 body {
 	background: white;	
@@ -49,6 +53,7 @@ body {
 		text-align: center;
 		padding: 0px;	
 		#nameRow {
+			font-family: $font-name;
 			padding-top: 4em;
 			h1 {
 				font-size: 5em;
@@ -56,6 +61,7 @@ body {
 			
 		}
 		#navRow {
+			font-family: $font-name;
 			display: inline-block;
 			font-size: 1.5em;
 			ul {
@@ -101,6 +107,7 @@ body {
 			margin-bottom: 4em;
 		}
 		#mainQuote {
+			font-family: $font-quote;
 			font-style: italic;
 			margin: 20px 0;
 		}
@@ -112,6 +119,7 @@ body {
 	margin-top: 3em;  
 	box-shadow: 0px 5px 1em $blogShadow;
 	.shTA { 
+		font-family: $font-heading;
 		margin-left: 0em;
 		.shTitle {
 			color: $blog-orange;
@@ -146,6 +154,9 @@ body {
 		}
 	}
 	.shText {
+		font-family: $font-text;
+		font-weight: 300;
+		font-size: 1.5em;
 		strong {
 			color: $blog-orange;
 		}
@@ -155,10 +166,12 @@ body {
 		background-color: $blog-orange;
 		background-image: none;
 		font-weight: bold;
+		font-family: $font-text;
 		border: none;
 		border-radius: 0px;
 	}
 	.shTags {
+		font-family: $font-text;
 		font-size: 1em;
 		font-weight: bold;
 		padding-top: 1em;
@@ -177,11 +190,14 @@ body {
 		}
 	}
 	.rightCard {
+		font-family: $font-heading;
 		color: $blog-orange;
 		padding: 5px 1em;
 		font-weight: bold;
 	}
 	.recentPosts, .categories {
+		font-family: $font-text;
+		font-weight: 300;
 		font-size: 1.2em;
 		a {
 			color: black;
@@ -200,6 +216,7 @@ body {
 	}
 	#contactContact {
 		h1 {
+			font-family: $font-heading;
 			color: $blog-orange;
 			font-weight: bolder;
 			font-size: 3em;
@@ -209,6 +226,7 @@ body {
 		
 		color: $blog-orange;
 		h3 {
+			font-family: $font-text;
 			font-weight: bolder;
 			a,span {
 				font-weight: normal;
@@ -249,8 +267,9 @@ body {
 	padding-right: 0em;
 }
 .footer {
+	font-family: $font-text;
 	margin-top: 2em;
-	h3{
+	h5{
 		text-align: center;
 		i {
 			color: $blog-orange;
@@ -264,21 +283,24 @@ body {
 @media only screen and (max-width:  335px) {
 	#skylinePhoto {
 		#nameRow {
-			font-size: 0.7em !important;
+			font-size: 0.8em !important;
+		}
+		#navRow {
+			font-size: 1.4em !important;
 		}
 	}
 	.navbar-default {
 		ul {
 			li {
 				i {
-					font-size: 1.5em !important;
+					font-size: 1.4em !important;
 				}
 			}
 		}
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	#skylinePhoto {
 		#nameRow {
 			font-size: 0.8em;
@@ -309,7 +331,7 @@ body {
 	.navbar-default {
 		.navbar-right {
 			text-align: center;
-			padding: 0.7em 0em; 
+			padding: 0.5em 0em; 
 			li {
 				display: inline;
 				a {
@@ -354,6 +376,12 @@ body {
 				font-size: 1.2em;
 			}
 		}
+	}
+	.shortPrev {
+	padding-left: 0em; 
+	}
+	.shortNext {
+		padding-right: 0em;
 	}
 }
 
