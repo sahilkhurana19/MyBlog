@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'rxpth!9(%!2vjz6okn9-#**tv59tnn2mj0iwvc1b(d7gzqnur='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 #ALLOWED_HOSTS = []
 
@@ -140,8 +140,9 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 CKEDITOR_UPLOAD_PATH = ""
 CKEDITOR_BROWSE_SHOW_DIRS = True
 
-MEDIA_URL = '/uploads/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+
 
 #TAGGIT_CASE_INSENSITIVE = True
 
