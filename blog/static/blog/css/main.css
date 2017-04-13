@@ -156,6 +156,26 @@ body {
         text-decoration: underline;
         cursor: pointer; }
 
+.shCardShort .shTA {
+  padding-left: 15px !important; }
+  .shCardShort .shTA .shTitleShort {
+    color: #ff811d; }
+    .shCardShort .shTA .shTitleShort h3 {
+      font-weight: bolder;
+      margin-top: 12px;
+      font-size: 1.2em; }
+  .shCardShort .shTA .shAuthorShort h5 {
+    font-weight: bold;
+    font-size: 0.9em; }
+.shCardShort .readShort {
+  padding-bottom: 1em; }
+
+.shortPrev {
+  padding-left: 0em; }
+
+.shortNext {
+  padding-right: 0em; }
+
 .footer {
   margin-top: 2em; }
   .footer h3 {
@@ -181,6 +201,10 @@ body {
 
   .shCard #contactEmail h3, .shCard #contactPhone h3 {
     font-size: 1.2em; }
+
+  .shortNext, .shortPrev {
+    padding-left: initial;
+    padding-right: initial; }
 
   .navbar {
     margin-bottom: 0em; }

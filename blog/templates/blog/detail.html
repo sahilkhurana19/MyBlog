@@ -49,5 +49,58 @@
     </div>
     {% endif %}
 </div>
+<div class="row">
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12  shCardShort shortPrev">
+        {% if previous_post %}
+        <div class="row shCard">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 shTA">
+                    <div class="row shTitleShort">
+                        <h3>{{ previous_post.title|upper }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 shText">
+                    <p>{{ previous_post.desc_sh|safe|truncatewords:15}}</p>
+                </div>
+            </div>
+            {% if previous_post.desc_lg %}
+            <div class="row readShort">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <a type="button" class="btn btn-warning" href="{% url 'blog:detail' previous_post.id %}">Read more</a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12  shCardShort shortNext">
+        {% if next_post %}
+        <div class="row shCard">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 shTA">
+                    <div class="row shTitleShort">
+                        <h3>{{ next_post.title|upper }}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 shText">
+                    <p>{{ next_post.desc_sh|safe|truncatewords:15}}</p>
+                </div>
+            </div>
+            {% if next_post.desc_lg %}
+            <div class="row readShort">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <a type="button" class="btn btn-warning" href="{% url 'blog:detail' next_post.id %}">Read more</a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+
 
 {% endblock %}
