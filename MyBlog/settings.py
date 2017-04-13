@@ -140,8 +140,9 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 CKEDITOR_UPLOAD_PATH = ""
 CKEDITOR_BROWSE_SHOW_DIRS = True
 
-MEDIA_URL = '/uploads/'
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+
 
 #TAGGIT_CASE_INSENSITIVE = True
 
