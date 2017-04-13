@@ -8,6 +8,9 @@ body {
   margin-left: 0px;
   margin-right: 0px; }
 
+.navbar {
+  margin-bottom: 0px; }
+
 .navbar-default {
   background: none;
   border: none;
@@ -139,6 +142,19 @@ body {
         color: #ff811d;
         transition: 0.3s;
         text-decoration: underline; }
+  .shCard #contactContact h1 {
+    color: #ff811d;
+    font-weight: bolder;
+    font-size: 3em; }
+  .shCard #contactEmail, .shCard #contactPhone {
+    color: #ff811d; }
+    .shCard #contactEmail h3, .shCard #contactPhone h3 {
+      font-weight: bolder; }
+      .shCard #contactEmail h3 a, .shCard #contactEmail h3 span, .shCard #contactPhone h3 a, .shCard #contactPhone h3 span {
+        font-weight: normal;
+        color: black;
+        text-decoration: underline;
+        cursor: pointer; }
 
 .footer {
   margin-top: 2em; }
@@ -149,13 +165,29 @@ body {
     .footer h3 a {
       color: #ff811d; }
 
+@media only screen and (max-width: 335px) {
+  #skylinePhoto #nameRow {
+    font-size: 0.7em !important; }
+
+  .navbar-default ul li i {
+    font-size: 1.5em !important; } }
 @media only screen and (max-width: 768px) {
+  #skylinePhoto #nameRow {
+    font-size: 0.8em; }
+  #skylinePhoto #navRow li {
+    display: inline; }
+    #skylinePhoto #navRow li a {
+      display: inline; }
+
+  .shCard #contactEmail h3, .shCard #contactPhone h3 {
+    font-size: 1.2em; }
+
   .navbar {
     margin-bottom: 0em; }
 
   .navbar-default .navbar-right {
     text-align: center;
-    padding: 0.2em 0em; }
+    padding: 0.7em 0em; }
     .navbar-default .navbar-right li {
       display: inline; }
       .navbar-default .navbar-right li a {

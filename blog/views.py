@@ -5,7 +5,8 @@ from .models import Post, Tag
 def index(request):
     latest_posts = Post.objects.order_by('-published_date')[:5]
     tags = Tag.objects.all()
-    context = {'latest_posts':latest_posts, 'tags':tags}
+    posts = Post.objects.all().order_by('-published_date')
+    context = {'latest_posts':latest_posts, 'posts':posts, 'tags':tags}
     return render(request, 'blog/index.html', context)
 
 def detail(request, post_id):
@@ -21,3 +22,9 @@ def category(request, tag_id):
     tags = Tag.objects.all()
     context = {'posts':posts, 'tags':tags, 'latest_posts': latest_posts}
     return render(request, 'blog/category.html', context)
+
+def contact(request):
+    latest_posts = Post.objects.order_by('-published_date')[:5]
+    tags = Tag.objects.all()
+    context = {'latest_posts':latest_posts, 'tags':tags}
+    return render(request, 'blog/contact.html', context)
