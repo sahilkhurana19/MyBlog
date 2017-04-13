@@ -9,13 +9,15 @@ def index(request):
     return render(request, 'blog/index.html', context)
 
 def detail(request, post_id):
+    latest_posts = Post.objects.order_by('-published_date')[:5]
     post = get_object_or_404(Post, pk=post_id)
     tags = Tag.objects.all()
-    context = {'post': post, 'tags':tags}
+    context = {'post': post, 'tags':tags, 'latest_posts':latest_posts}
     return render(request, 'blog/detail.html', context)
 
 def category(request, tag_id):
+    latest_posts = Post.objects.order_by('-published_date')[:5]
     posts = Post.objects.filter(tags__pk = tag_id ).order_by('-published_date')
     tags = Tag.objects.all()
-    context = {'posts':posts, 'tags':tags}
+    context = {'posts':posts, 'tags':tags, 'latest_posts': latest_posts}
     return render(request, 'blog/category.html', context)

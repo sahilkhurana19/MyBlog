@@ -25,8 +25,12 @@ body {
 	.navbar-right {
 		padding-right: 2em;
 		i {
-			font-size: 1.5em;
+			font-size: 1.8em;
 			color: black;
+			&:hover {
+				color: $blog-orange;
+				transition: 0.3s;
+			}
 		}
 	}
 }
@@ -99,6 +103,7 @@ body {
 	}
 }
 
+
 .shCard {
 	margin-top: 3em;  
 	box-shadow: 0px 5px 1em $blogShadow;
@@ -158,8 +163,12 @@ body {
 		a {  
 			color: $blog-orange;
 			text-decoration: none;
-			&:hover, &:active, &:visited {
+			&:active, &:visited {
 				color: $blog-orange;
+			}
+			&:hover {
+				color: $blog-orange;
+				text-decoration: underline;
 			}
 		}
 	}
@@ -169,12 +178,53 @@ body {
 		font-weight: bold;
 	}
 	.recentPosts, .categories {
+		font-size: 1.2em;
+		a {
+			color: black;
+			text-decoration: none;
+			&:visited, &:active {
+				color: black;
+			}
+			&:hover {
+				color: $blog-orange;
+				transition: 0.3s;
+				text-decoration: underline;
+			}
+		}
 		border-top: 1px solid #eee;
 		padding: 1em;
 	}
 }
+.footer {
+	margin-top: 2em;
+	h3{
+		text-align: center;
+		i {
+			color: $blog-orange;
+		}
+		a {
+			color: $blog-orange;
+		}
+	}
+}
 
 @media only screen and (max-width: 768px) {
+	.navbar {
+		margin-bottom: 0em;
+	}
+	.navbar-default {
+		.navbar-right {
+			text-align: center;
+			padding: 0.2em 0em; 
+			li {
+				display: inline;
+				a {
+					display: inline;
+				}
+			}
+		}
+	} 
+	
 	.dateInliner {
 		display: inline;
 		h2, h4 {
@@ -220,6 +270,12 @@ body {
 		}
 		.shImg {
 			height: 170px;
+		}
+		.rightCard {
+			text-align: center;
+			padding: 7px;
+			font-size: 1.8em;
+		
 		}
 	}
 }
