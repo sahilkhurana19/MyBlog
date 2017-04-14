@@ -28,7 +28,7 @@
     </div>
     {% if post.image %}
     <div class="row">
-        <img src="uploads/{{ post.image }}" class="img-responsive shImg">
+        <img src="{{ post.image.url }}" class="img-responsive shImg">
     </div>
     {% endif %}
     <div class="row">
